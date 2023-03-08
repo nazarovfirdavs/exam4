@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="contanier">
+        <header class="header">
+            <div class="header_top">
+                <img class="logo_home" src="../img/logo_home.png" alt="logo">
+                <div class="form">
+                <img class="search-icon" src="../img/searchicon.png" alt="search">
+                <input class="search_input" id="search" type="search" placeholder="Search books">
+                </div>
+               <button id="mode"><img src="../img/sun.png" id="sun" alt="sun"></button>
+               <a href="../page/login.html">
+                <button id="logout">Logout</button>
+               </a>
+               
+            </div>
+            <div class="header_bottom">
+                <h4 class="result_text">Showing 18 Result(s)</h4>
+                <button id="order"><img src="../img/calendar.png" alt="calendar">Order by newest</button>
+            </div>
+        </header>
+
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="https://thumbs.dreamstime.com/b/open-book-hardback-books-wooden-table-education-background-back-to-school-copy-space-text-76106466.jpg" class="d-block w-100" alt="karusel">
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="https://assets.entrepreneur.com/content/3x2/2000/20191219170611-GettyImages-1152794789.jpeg" class="d-block w-100" alt="karusel">
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.southernliving.com/thmb/WYR3KLFcxNQ1MuZNVTzDe0ku33A=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/gettyimages-183822187-1-709a5ded972a426a9e214eba1f81c8a4.jpg" class="d-block w-100" alt="karusel">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+          <section>
+            <div class="container d-flex">
+                <div class="our">
+                    <h3>Bookmarks</h3>
+                    <p>If you don’t like to read, you haven’t found the right book</p>
+                    <br>
+                    <br>
+                    <div class="phyton">
+                        <span class="our__phyton">
+                            <b class="phton__b">Python</b>
+                            <p class="phyton__text">David M. Beazley</p>
+                        </span>
+                        <img class="our__img" src="../img/book.svg" width="24" height="24" alt="book">
+                        <img class="our__img" src="../img/delete.svg" width="24" height="24" alt="delite">
+
+                    </div>
+
+
+
+
+
+                    <div class="phyton">
+                        <span class="our__phyton">
+                            <b class="phton__b">Python</b>
+                            <p class="phyton__text">David M. Beazley</p>
+                        </span>
+                        <img class="our__img" src="../img/book.svg" width="24" height="24" alt="book">
+                        <img class="our__img" src="../img/delete.svg" width="24" height="24" alt="delite">
+
+                    </div>
+
+                    <div class="phyton">
+                        <span class="our__phyton">
+                            <b class="phton__b">Python</b>
+                            <p class="phyton__text">David M. Beazley</p>
+                        </span>
+                        <img class="our__img" src="../img/book.svg" width="24" height="24" alt="book">
+                        <img class="our__img" src="../img/delete.svg" width="24" height="24" alt="delite">
+
+                    </div>
+                </div>
+                    <div class="our__book-list">
+                        <ul class="list d-flex">
+                           
+                        </ul>
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+          
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item page-link">1</li>
+                <li class="page-item page-link">2</li>
+                <li class="page-item page-link">3</li>
+            </ul>
+        </nav>
+    </div>
+
+    <template id="template">
+        <div class="card">
+            <div class="div_img">
+                 <img id="card_img" src="http://books.google.com/books/content?id=zYw3sYFtz9kC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api" alt="book">
+            </div>
+            <h4 id="card_name">Pyton</h4>
+            <span class="span">David M. Beazley</span>
+            <p id="data">2009</p>
+            <div class="card_button d-flex">
+                <button id="Bookmark">Bookmark</button>
+                <button id="more_info">More info</button>
+            </div>
+            <button id="read">Read</button>
+        </div>
+    </template>
+    <!-- <script src="../js/main.js"></script> -->
+    <script src="../js/index.js"></script>
+    <script src="../js/product.js"></script>
+</body>
+</html>

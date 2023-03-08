@@ -1,0 +1,79 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.679),rgba(0, 0, 0, 0.679)), url(../img/back.jpg);
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+}
+.login{
+    width: 300px;
+    height: 292px;
+    margin: 198px 580px 0px;
+    display: inline-grid;
+}
+.form{
+    display: inline-grid;
+    margin-top: -50px;
+}
+.logo{
+    margin-left: 30px;
+}
+#username{
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    outline: 0;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+#username::placeholder{
+    color: #fff;
+    text-transform: uppercase;
+}
+.form .user_img{
+    position: absolute;
+    padding: 13px 12px 0px; 
+    cursor: pointer;
+}
+#password{
+    background-color: transparent;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    outline: 0;
+    color: #fff;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+#password::placeholder{
+    color: #fff;
+    text-transform: uppercase;
+}
+.form img{
+    position: absolute;
+    padding: 80px 12px;
+    cursor: pointer;
+}
+.btn_login{
+    width: 300px;
+    height: 45px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0D75FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
